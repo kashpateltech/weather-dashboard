@@ -1,0 +1,33 @@
+.favourable {
+    background-color: green;
+    color: white;
+    padding: 2px;
+}
+
+.moderate {
+    background-color: Orange;
+    color: white;
+    padding: 2px;
+}
+
+.severe {
+    background-color: Red;
+    color: white;
+    padding: 2px;
+}
+
+.city-name {
+    text-transform: capitalize;
+}
+
+.cities-name {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.list-group-item {
+    border:none !important;
+}

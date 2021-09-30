@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header class ="container-fluid bg-dark text-white text-center p-2">
+        <h1>Weather Dashboard</h1>
+    </header>
+
+
+    <main class ="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 bg-light">
+                <h4>Search City:</h4>
+                <div class="input-group mb-3">
+                    <input id="enter-city" type="text" class="form-control" placeholder="Search city" aria-label="Search city">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" id="search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>                  
+                </div>
+                <button class="btn btn-primary mb-3" type="button" id="clear-history">Clear history</button>
+                <div id="cities-name" class="cities-name">
+
+                </div>
+                <form id="search-history"></form>
+            </div>
+            <div class="col-lg-9">
+                <div class="row mr-0">
+                    <div class="col-lg-11 card m-3" id="curr-weather">
+                        <div class="card-body" style="display:none">
+                            <h3 id="city-name" class="city-name align-middle"></h3>  
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-12">
+                <h3>5-Day Forecast</h3>
+                </div> -->
+                <div class="row" id="fiveday-header">
+                                          
+                        
+                    
+                </div>
+                <div class="row">
+                    <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+                    <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+                    <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+                    <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+                    <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+                </div>
+            </div>
+        </div>
+    </main> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
